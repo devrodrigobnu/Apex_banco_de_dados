@@ -39,12 +39,20 @@ while True:
             print(item)
         
     elif operacao == '2':
-        # Ler id da coluna a deeletar
-
+        os.system('cls')
+        
+        # Ler id da coluna a deletar
+        id_deletar = input('Informe o ID da coluna a ser deletada: ')
+        
         # Executar o código SQL
-
+        cursor.execute(f''' 
+            DELETE FROM usuarios
+            WHERE id = {id_deletar}
+        ''')
+        
         # Printar mensagem de sucesso
-        ...
+    if cursor.rowcount > 0:
+        print('Registro deletado com sucesso!')
 
     elif operacao == '3':
         # Ler o id da coluna a modificar
