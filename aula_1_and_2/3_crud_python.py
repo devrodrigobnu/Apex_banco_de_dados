@@ -39,11 +39,37 @@ while True:
             print(item)
         
     elif operacao == '2':
+        # Ler id da coluna a deeletar
+
+        # Executar o código SQL
+
+        # Printar mensagem de sucesso
         ...
+
     elif operacao == '3':
+        # Ler o id da coluna a modificar
+
+        # Executar o código SQL
+
+        # Printar mensagem de sucesso
         ...
     elif operacao == '4':
+        # Ler os dados novos
+
+        # Validar os dados 
+
+        # Se válidos, vamos inserir na base de dados
+
+        # Senão, mostrar mensagem de erro ao usuário         
         ...
     elif operacao == '5':
         print('Laço de repetição parado com sucesso!')
         break
+
+
+
+# Compactar nossas mudanças, para então enviar elas ao banco de dados
+# conexao.commit()
+# print('Comitou dados com sucesso!')
+# conexao.close()
+# print('Conexão fechada com sucesso!')
