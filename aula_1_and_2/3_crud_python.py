@@ -17,4 +17,33 @@ menu_crud += '\nInforme a opção: '
 
 # While que rodará o programa
 while True:
+    # Ler a opção do usuário
     operacao = input(menu_crud)
+
+    # Verificar a operação informada
+    if operacao == '1':
+        os.system('cls')
+
+        # Executar o código SQL
+        cursor.execute(f''' 
+            SELECT * FROM usuarios
+        ''')
+
+        # Extrair o resultado que voltou do banco de dados
+        # através do SELECT que selecionou os dados para o programa
+
+        resultados = cursor.fetchall()
+             
+    
+        for item in resultados:
+            print(item)
+        
+    elif operacao == '2':
+        ...
+    elif operacao == '3':
+        ...
+    elif operacao == '4':
+        ...
+    elif operacao == '5':
+        print('Laço de repetição parado com sucesso!')
+        break
