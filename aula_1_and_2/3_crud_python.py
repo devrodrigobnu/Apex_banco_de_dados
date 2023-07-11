@@ -51,30 +51,57 @@ while True:
         ''')
         
         # Printar mensagem de sucesso
-    if cursor.rowcount > 0:
-        print('Registro deletado com sucesso!')
-
+        if cursor.rowcount > 0:
+            print('Registro deletado com sucesso!')
+        else:
+            print('Nenhum registro deletado!')
+    
+    
     elif operacao == '3':
+        
         # Ler o id da coluna a modificar
-
+        id_modificar = input('Informe o ID da coluna a ser modificada: ')
+        
         # Executar o código SQL
-
-        # Printar mensagem de sucesso
-        ...
+        nome_novo = input('Informe o novo nome: ')
+        novo_email = input('Informe novo e-mail: ')
+        nova_idade = input('Informe nova idade: ')
+        cursor.execute(f'''
+        UPDATE usuarios 
+        SET nome = '{nome_novo}',
+            email = '{novo_email}',
+            idade = {nova_idade}
+        WHERE id = {id_modificar}
+    ''')
+        
+         # Printar mensagem de sucesso
+        if cursor.rowcount > 0:
+            print('Registro atualizado com sucesso')
+        else:
+            print('Nenhum registro foi atualizado')    
+                
+                
     elif operacao == '4':
+        
         # Ler os dados novos
+        novo_nome = input('Informe o novo nome: ')
+        novo_email = input('Informe o novo e-mail: ')
+        nova_idade = input('Informa a nova idade: ')
+        
+        # Validar os dados
+        # Se válidos, vamos inserir na base de dados 
+        if novo_nome and novo_email and nova_idade:
+            cursor.execute(f'''
+                INSERT INTO usuarios (nome, email, idade) VALUES ('{novo_nome}', '{novo_email}', {nova_idade})               
+        ''')
 
-        # Validar os dados 
-
-        # Se válidos, vamos inserir na base de dados
-
-        # Senão, mostrar mensagem de erro ao usuário         
-        ...
+            print('Registro inserido com sucesso!')
+        else:
+            print('Dados inválidos.')           
+        
     elif operacao == '5':
         print('Laço de repetição parado com sucesso!')
         break
-
-
 
 #Compactar nossas mudanças, para então enviar elas ao banco de dados
 conexao.commit()
