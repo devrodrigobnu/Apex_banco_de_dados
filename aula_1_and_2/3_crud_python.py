@@ -59,6 +59,7 @@ while True:
     
     elif operacao == '3':
         os.system('cls')
+        
         # Ler o id da coluna a modificar
         id_modificar = input('Informe o ID da coluna a ser modificada: ')
         
@@ -83,6 +84,7 @@ while True:
                 
     elif operacao == '4':
         os.system('cls')
+        
         # Ler os dados novos
         novo_nome = input('Informe o novo nome: ')
         novo_email = input('Informe o novo e-mail: ')
