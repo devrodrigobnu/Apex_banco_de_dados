@@ -68,8 +68,8 @@ while True:
 
 
 
-# Compactar nossas mudanças, para então enviar elas ao banco de dados
-# conexao.commit()
-# print('Comitou dados com sucesso!')
-# conexao.close()
-# print('Conexão fechada com sucesso!')
+#Compactar nossas mudanças, para então enviar elas ao banco de dados
+conexao.commit()
+print('Comitou dados com sucesso!')
+conexao.close()
+print('Conexão fechada com sucesso!')
