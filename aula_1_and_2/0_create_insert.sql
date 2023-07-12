@@ -1,4 +1,4 @@
--- database: C:\Users\rodri\OneDrive\Desktop\apex\banco_de_dados\aula_1_and_2\mydatabase.db
+-- database: C:\Users\ALUNO\Desktop\Adrian_Logica\Aula\Apex_ensino\Apex_banco_de_dados\aula_1_and_2\mydatabase.db
 
 -- Use the ▷ button in the top right corner to run the entire file.
 

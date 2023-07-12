@@ -88,13 +88,14 @@ while True:
         # Ler os dados novos
         novo_nome = input('Informe o novo nome: ')
         novo_email = input('Informe o novo e-mail: ')
-        nova_idade = input('Informa a nova idade: ')
+        nova_idade = int(input('Digite a nova idade: '))
         
         # Validar os dados
         # Se válidos, vamos inserir na base de dados 
         if novo_nome and novo_email and nova_idade:
             cursor.execute(f'''
-                INSERT INTO usuarios (nome, email, idade) VALUES ('{novo_nome}', '{novo_email}', {nova_idade})               
+                INSERT INTO usuarios (nome, email, idade) 
+                VALUES ('{novo_nome}', '{novo_email}', {nova_idade})               
         ''')
 
             print('Registro inserido com sucesso!')
