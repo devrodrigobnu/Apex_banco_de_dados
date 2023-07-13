@@ -86,3 +86,13 @@ FROM uzuarios
 where idade is null;
 
 -- Alterar para 27 todas as idades
+
+UPDATE uzuarios
+set idade = '27';
+
+-- Deletar todos os usuários com idade inferior a 18 anos
+
+DELETE FROM uzuarios
+WHERE idade < 18;
+
+-- Excluir todos os dados da tabela e reiniciar a contabilização
