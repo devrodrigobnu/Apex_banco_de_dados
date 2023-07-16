@@ -96,3 +96,5 @@ DELETE FROM uzuarios
 WHERE idade < 18;
 
 -- Excluir todos os dados da tabela e reiniciar a contabilização
+
+DELETE FROM uzuarios
