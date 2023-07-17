@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS
         id INTEGER PRIMARY KEY,
         nome TEXT (20),
         email TEXT (20),
-        idade INTENGER,
+        idade INTENGER
 
     ) ;
 
@@ -43,6 +43,8 @@ WHERE id = 2;
 
 -- Exercício 5: Selecione todos os clientes da tabela "clientes" e ordene-os por idade em ordem crescente.
 
+SELECT * FROM clientes
+ORDER BY idade ASC;
 
 
 
