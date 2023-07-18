@@ -94,16 +94,149 @@ ORDER BY notas DESC;
 SELECT AVG(notas) AS media_notas FROM alunos;
 
 -- Inserir mais 15 linhas com dados distintos, e modificar três linhas existentes em pelo menos duas colunas cada.
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('João da Silva', 20, 8.5, 'Matemática');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Maria Santos', 22, 9.0, 'Português');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Pedro Oliveira', 19, 7.8, 'História');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Ana Pereira', 21, 6.5, 'Geografia');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Luiz Costa', 23, 8.0, 'Ciências');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Carla Almeida', 20, 7.2, 'Biologia');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Rafael Fernandes', 24, 6.8, 'Física');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Sofia Lima', 22, 9.5, 'Química');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Gabriel Ribeiro', 19, 7.9, 'Educação Física');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Laura Rodrigues', 21, 8.3, 'Artes');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Matheus Cardoso', 25, 6.5, 'Filosofia');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Isabela Gomes', 18, 9.1, 'Sociologia');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Lucas Barbosa', 23, 7.7, 'Inglês');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Júlia Moreira', 20, 8.8, 'Literatura');
+
+INSERT INTO alunos (nome, idade, notas, materia)
+VALUES ('Eduardo Souza', 22, 6.9, 'Espanhol');
 
 -- Crie uma coluna escola e insira as escolas para os alunos usando update 
+ALTER TABLE alunos
+ADD COLUMN escolas TEXT (40);
+
+UPDATE alunos
+SET escolas = 'Escola Municipal Pedro Álvares Cabral'
+WHERE id = 1;
+UPDATE alunos
+SET escolas = 'Escola Estadual Professora Maria da Silva'
+WHERE id = 2;
+UPDATE alunos
+SET escolas = 'Colégio São Francisco de Assis'
+WHERE id = 3;
+UPDATE alunos
+SET escolas = 'Escola Municipal João Goulart'
+WHERE id = 4;
+UPDATE alunos
+SET escolas = 'Escola Estadual Professora Ana Maria'
+WHERE id = 5;
+UPDATE alunos
+SET escolas = 'Colégio Dom Bosco'
+WHERE id = 6;
+UPDATE alunos
+SET escolas = 'Escola Municipal Carlos Drummond de Andrade'
+WHERE id = 7;
+UPDATE alunos
+SET escolas = 'Escola Estadual Professora Clara Nunes'
+WHERE id = 8;
+UPDATE alunos
+SET escolas = 'Colégio Santa Catarina'
+WHERE id = 9;
+UPDATE alunos
+SET escolas = 'Escola Municipal Monteiro Lobato'
+WHERE id = 10;
+UPDATE alunos
+SET escolas = 'Escola Estadual Professor Antônio da Silva'
+WHERE id = 11;
+UPDATE alunos
+SET escolas = 'Colégio Imaculada Conceição'
+WHERE id = 12;
+UPDATE alunos
+SET escolas = 'Escola Municipal Machado de Assis'
+WHERE id = 13;
+UPDATE alunos
+SET escolas = 'Escola Estadual Professora Mariana Souza'
+WHERE id = 14;
+UPDATE alunos
+SET escolas = 'Colégio Nossa Senhora das Graças'
+WHERE id = 15;
+UPDATE alunos
+SET escolas = 'Escola Municipal Vinicius de Moraes'
+WHERE id = 16;
+UPDATE alunos
+SET escolas = 'Escola Estadual Professor Rui Barbosa'
+WHERE id = 17;
+UPDATE alunos
+SET escolas = 'Colégio Bom Jesus'
+WHERE id = 18;
+UPDATE alunos
+SET escolas = 'Escola Municipal Cecília Meireles'
+WHERE id = 19;
+UPDATE alunos
+SET escolas = 'Escola Estadual Professor Luiz Gonzaga'
+WHERE id = 20;
+UPDATE alunos
+SET escolas = 'Colégio Ressurreição'
+WHERE id = 21;
+UPDATE alunos
+SET escolas = 'Escola Municipal Manuel Bandeira'
+WHERE id = 22;
+UPDATE alunos
+SET escolas = 'Escola Estadual Professora Maria Clara'
+WHERE id = 23;
+UPDATE alunos
+SET escolas = 'Colégio São Luiz'
+WHERE id = 24;
+UPDATE alunos
+SET escolas = 'Escola Municipal Anita Garibaldi'
+WHERE id = 25;
+UPDATE alunos
+SET escolas = 'Escola Estadual Professor Francisco Alves'
+WHERE id = 26;
 
 -- Selecione os alunos cujo nome começa com a letra "A" na tabela "Alunos".
+SELECT * FROM alunos
+WHERE nome LIKE 'a%';
 
 -- Ordene os alunos da tabela "Alunos" por idade em ordem crescente.
+SELECT * FROM alunos
+ORDER BY idade ASC;
 
 -- Selecione os alunos que têm idade entre 20 e 25 anos na tabela "Alunos".
+SELECT * FROM alunos
+WHERE idade BETWEEN 20 and 25;
 
 -- Selecione os alunos que têm idade maior que 18 e que estudam na escola "Bom Jesus" na tabela "Alunos".
+SELECT * FROM alunos
+WHERE idade > 18 AND escolas = 'Colégio Bom Jesus'
 
 -- Escreva uma consulta SQL que calcule a média de idade dos alunos para cada escola
 
