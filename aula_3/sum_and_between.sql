@@ -1,4 +1,4 @@
--- database: c:\Users\ALUNO\Desktop\rl_logica\Aula\Apex_ensino\Apex_banco_de_dados\aula_3\mydatabase.db
+-- database: c:\Users\rodri\OneDrive\Desktop\apex\banco_de_dados\aula_3\mydatabase.db
 
 -- Somando todas as idades:
 SELECT SUM(idade) AS soma_das_idades

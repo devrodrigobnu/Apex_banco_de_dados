@@ -1,4 +1,4 @@
--- database: C:\Users\rodri\OneDrive\Desktop\apex\banco_de_dados\aula_1_and_2\mydatabase.db
+-- database: c:\Users\rodri\OneDrive\Desktop\apex\banco_de_dados\aula_1_and_2\mydatabase.db
 
 SELECT * FROM usuarios;
 
