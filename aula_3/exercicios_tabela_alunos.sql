@@ -95,18 +95,7 @@ SELECT AVG(notas) AS media_notas FROM alunos;
 
 -- Inserir mais 15 linhas com dados distintos, e modificar três linhas existentes em pelo menos duas colunas cada.
 
-INSERT INTO alunos (nome, idade, notas, materia)
-VALUES ('Valentina', 12, 5.5, 'geografia');
-
-
 -- Crie uma coluna escola e insira as escolas para os alunos usando update 
-
-ALTER TABLE alunos
-ADD COLUMN escolas;
-
-UPDATE alunos
-SET escolas = 'João Widemann'
-WHERE id = 1;
 
 -- Selecione os alunos cujo nome começa com a letra "A" na tabela "Alunos".
 
