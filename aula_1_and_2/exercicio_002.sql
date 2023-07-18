@@ -41,13 +41,6 @@ where id = 1;
 DELETE FROM clientes
 WHERE id = 2;
 
--- Exercício 5: Selecione todos os clientes da tabela "clientes" e ordene-os por idade em ordem crescente.
-
-SELECT * FROM clientes
-ORDER BY idade ASC;
-
-
-
 
 
 
