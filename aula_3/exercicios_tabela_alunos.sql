@@ -1,4 +1,4 @@
--- database: c:\Users\rodri\OneDrive\Desktop\apex\banco_de_dados\aula_3\mydatabase.db
+-- database: c:\Users\rodri\OneDrive\Desktop\apex\banco_de_dados\aula_3\mydatabase_alunos.db
 
 
 -- # Exercícios:
