@@ -236,24 +236,52 @@ WHERE idade BETWEEN 20 and 25;
 
 -- Selecione os alunos que têm idade maior que 18 e que estudam na escola "Bom Jesus" na tabela "Alunos".
 SELECT * FROM alunos
-WHERE idade > 18 AND escolas = 'Colégio Bom Jesus'
+WHERE idade > 18 AND escolas = 'Colégio Bom Jesus';
 
 -- Escreva uma consulta SQL que calcule a média de idade dos alunos para cada escola
+SELECT escolas, AVG(idade) AS media_idade
+FROM alunos
+GROUP BY escolas;
+
 
 -- Selecione os alunos que obtiveram uma nota maior ou igual a 7 na disciplina de "Matemática".
 
--- Selecione os alunos que obtiveram uma nota menor que 5 na disciplina de "História".
+SELECT * FROM alunos
+WHERE notas > 7 and materia = 'matemática';
+
+-- Selecione os alunos que obtiveram uma nota menor que 10 na disciplina de "História".
+SELECT * FROM alunos
+WHERE notas < 10 and materia = 'história';
 
 -- Selecione os alunos que têm o nome terminado com a letra "o" na tabela "Alunos".
+SELECT * FROM alunos
+WHERE nome LIKE '%o';
 
 -- Selecione os alunos que estudam na escola "Escola Y" e têm idade menor que 30 anos na tabela "Alunos".
+SELECT * FROM alunos
+WHERE idade < 30 AND escolas = 'Escola Estadual Professor Antônio da Silva';
 
 -- Selecione os alunos que estudam na escola "Escola Z" ou têm mais de 35 anos na tabela "Alunos".
+SELECT * FROM alunos
+WHERE idade > 35 AND escolas = 'Escola Estadual Professora Ana Maria';
 
 -- Ordene os alunos da tabela "Alunos" por nome em ordem alfabética.
 
+SELECT * FROM alunos
+ORDER BY nome ASC;
+
 -- Conte quantos alunos obtiveram a nota máxima na disciplina de "Química".
 
--- Selecione os alunos cujo nome contém a letra "e" e a idade é maior que 25 na tabela "Alunos".
+SELECT * FROM alunos
+WHERE notas >= 10;
+
+-- Selecione os alunos cujo nome contém a letra "e" e a idade é maior que 18 na tabela "Alunos".
+
+SELECT * FROM alunos
+WHERE nome LIKE '%e%' AND idade > 18;
 
 -- Escreva uma consulta SQL que liste o nome do aluno mais velho de cada escola.
+
+SELECT escolas, MAX(idade) AS idade, nome
+FROM alunos
+GROUP BY escolas;
