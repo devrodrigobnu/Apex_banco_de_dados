@@ -68,7 +68,7 @@ VALUES ('ricardo', 25);
 -- Selecione todas as colunas onde a matéria está com valor null.
 
 SELECT * FROM alunos
-WHERE idade and materia is null;
+WHERE materia is null;
 
 -- Atualize a idade do aluno com id 10 para 22 anos na tabela "Alunos".
 
@@ -272,8 +272,9 @@ ORDER BY nome ASC;
 
 -- Conte quantos alunos obtiveram a nota máxima na disciplina de "Química".
 
-SELECT * FROM alunos
-WHERE notas >= 10;
+SELECT COUNT(*) AS nota_maxima
+FROM alunos
+WHERE disciplina = 'ingles' AND nota = 10;
 
 -- Selecione os alunos cujo nome contém a letra "e" e a idade é maior que 18 na tabela "Alunos".
 

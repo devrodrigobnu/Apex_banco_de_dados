@@ -1,0 +1,20 @@
+1 - Crie uma tabela chamada "clientes" com os campos: id (inteiro), nome (texto) e email (texto).
+2 - Insira 5 registros na tabela "clientes".
+3 - Escreva uma consulta para selecionar todos os clientes da tabela.
+4 - Escreva uma consulta para selecionar o cliente com o id igual a 3.
+5 - Escreva uma consulta para selecionar o nome e o email de todos os clientes.
+6 - Escreva uma consulta para atualizar o email do cliente com id igual a 2.
+7 - Escreva uma consulta para excluir o cliente com o id igual a 4.
+8 - Crie uma tabela chamada "produtos" com os campos: id (inteiro), nome (texto) e preço (real).
+9 - Insira 10 registros na tabela "produtos".
+10 - Escreva uma consulta para selecionar todos os produtos com preço maior que 50.00.
+11 - Escreva uma consulta para selecionar o produto mais caro da tabela.
+12 - Escreva uma consulta para calcular o preço médio dos produtos.
+13 - Crie uma tabela chamada "pedidos" com os campos: id (inteiro), id_cliente (inteiro), id_produto (inteiro) e data (texto).
+14 - Insira 8 registros na tabela "pedidos".
+15 - Escreva uma consulta para selecionar todos os pedidos feitos por um cliente específico (use o id do cliente).
+16 - Escreva uma consulta para contar quantos pedidos foram feitos por um cliente específico.
+17 - Escreva uma consulta para selecionar todos os pedidos feitos antes de uma determinada data.
+18 - Escreva uma consulta para calcular o total gasto por um cliente específico em pedidos (considere o preço dos produtos).
+19 - Crie uma tabela chamada "funcionarios" com os campos: id (inteiro), nome (texto) e cargo (texto).
+20 - Escreva uma consulta para selecionar o nome e o cargo de todos os funcionários ordenados por cargo em ordem alfabética.
