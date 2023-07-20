@@ -1,4 +1,4 @@
--- database: c:\Users\ALUNO\Desktop\rl_logica\Aula\Apex_ensino\Apex_banco_de_dados\aula_3_and_4\mydatabase_alunos.db
+-- database: c:\Users\rodri\OneDrive\Desktop\apex\banco_de_dados\aula_3_and_4\mydatabase.db
 
 -- Criando uma view
 create view SelectProgramadores AS
@@ -16,7 +16,7 @@ where nome is NOT NULL
 order by nome asc;
 
 -- Chamar a view nova
-select * from ProgramadoresUsuariosEmailMatch
+select * from ProgramadoresUsuariosEmailMatch;
 
 
 -- Deletar view

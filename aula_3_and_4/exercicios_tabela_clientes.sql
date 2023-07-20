@@ -1,4 +1,4 @@
--- database: :\Users\ALUNO\Desktop\rl_logica\Aula\Apex_ensino\Apex_banco_de_dados\aula_3\mydatabase_alunos.db
+-- database: c:\Users\rodri\OneDrive\Desktop\apex\banco_de_dados\aula_3_and_4\mydatabase.db
 
 -- 1 - Crie uma tabela chamada "clientes" com os campos: 
 -- id (inteiro), nome (texto) e email (texto).
@@ -111,5 +111,11 @@ CREATE TABLE IF NOT EXISTS pedidos (
     data TEXT(10)
 );
 
--- 14 - Insira 8 registros na tabela "pedidos".
 
+-- 14 - Insira 8 registros na tabela "pedidos".
+-- 15 - Escreva uma consulta para selecionar todos os pedidos feitos por um cliente específico (use o id do cliente).
+-- 16 - Escreva uma consulta para contar quantos pedidos foram feitos por um cliente específico.
+-- 17 - Escreva uma consulta para selecionar todos os pedidos feitos antes de uma determinada data.
+-- 18 - Escreva uma consulta para calcular o total gasto por um cliente específico em pedidos (considere o preço dos produtos).
+-- 19 - Crie uma tabela chamada "funcionarios" com os campos: id (inteiro), nome (texto) e cargo (texto).
+-- 20 - Escreva uma consulta para selecionar o nome e o cargo de todos os funcionários ordenados por cargo em ordem alfabética.

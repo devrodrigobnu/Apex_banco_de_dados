@@ -1,4 +1,4 @@
--- database: c:\Users\ALUNO\Desktop\rl_logica\Aula\Apex_ensino\Apex_banco_de_dados\aula_3_and_4\mydatabase_alunos.db
+-- database: c:\Users\rodri\OneDrive\Desktop\apex\banco_de_dados\aula_3_and_4\mydatabase.db
 
 
 -- Cria tabela usuarios com mesmas colunas que programadores
